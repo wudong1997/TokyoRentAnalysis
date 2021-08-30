@@ -16,10 +16,10 @@ except IOError:
     print("I/O error")
 
 
-def init_dict():
-    origin_dict = {'Mansion': '', 'Address': '', 'rent': '', 'management-cost': '', 'deposit': '', 'gratuity': '',
-                   'room-type': '', 'area': ''}
-    return origin_dict
+# def init_dict():
+#     origin_dict = {'Mansion': '', 'Address': '', 'rent': '', 'management-cost': '', 'deposit': '', 'gratuity': '',
+#                    'room-type': '', 'area': ''}
+#     return origin_dict
 
 
 def get_all_room_link(page):
@@ -67,6 +67,6 @@ def get_all_room_link(page):
                 print("I/O error")
 
 
-for i in range(1, 210):
+for i in range(1, max_page):
     get_all_room_link(i)
     print(i, '页')
