@@ -6,7 +6,6 @@ KEY = ''
 
 
 def get_coord(address, API_KEY=KEY):
-    address = address
     url = f'https://maps.googleapis.com/maps/api/geocode/json?address={address},+JP&&key={API_KEY}'
     r = requests.get(url)
     ro = r.json()
