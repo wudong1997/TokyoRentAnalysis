@@ -67,6 +67,20 @@ def get_all_room_link(page):
                 print("I/O error")
 
 
-for i in range(1, max_page):
-    get_all_room_link(i)
-    print(i, '页')
+def data_modify(file_name):
+    """
+    将爬取的数据进行整理，提取其中的数字，如：8万円->80000.0; 填充nan值
+    :param file_name: 文件名
+    :return: dataFrame
+    """
+    df = pd.read_csv(file_name, header=0)
+    df['rent'] = df['rent'].str.extract(r'(\d+\.?\d*)', expand=True).astype(float).multiply(10000)
+    df['area'] = df['area'].str.extract(r'(\d+\.?\d*)', expand=True).astype(float).fillna(0)
+    df['management-cost'] = df['management-cost'].str.extract(r'(\d+\.?\d*)', expand=True).astype(float).fillna(0)
+    df['deposit'] = df['deposit'].str.extract(r'(\d+\.?\d*)', expand=True).astype(float).multiply(10000).fillna(0)
+    df['gratuity'] = df['gratuity'].str.extract(r'(\d+\.?\d*)', expand=True).astype(float).multiply(10000).fillna(0)
+
+    return df
+
+
+get_all_room_link(PAGE)
