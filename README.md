@@ -58,7 +58,13 @@
    "status" : "OK"
   }
   ```
-
+  之后可通过读取json的方式读取相关信息
+  ```
+  coordination = ro.get('geometry').get('location')
+  lat = coordination.get('lat')
+  lng = coordination.get('lng')
+  ```
+  
   ## 数据可视化
   ### 房源密度热力分布图
   ![image](https://github.com/wudong1997/TokyoRentAnalysis/blob/main/image/%E5%88%86%E5%B8%83%E5%AF%86%E5%BA%A6.png)
