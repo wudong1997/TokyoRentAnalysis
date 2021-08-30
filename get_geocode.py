@@ -2,10 +2,15 @@ from numpy import nan
 import requests
 import pandas as pd
 
-KEY = ''
+KEY = ''    # google map api 密钥
 
 
 def get_coord(address, API_KEY=KEY):
+    """
+    address: 需要查询经纬度信息的地址
+    API_KEY: 默认密钥
+    return: 纬度lat, 精度lng, 格式化后的地址
+    """
     url = f'https://maps.googleapis.com/maps/api/geocode/json?address={address},+JP&&key={API_KEY}'
     r = requests.get(url)
     ro = r.json()
@@ -27,6 +32,9 @@ def get_coord(address, API_KEY=KEY):
 
 
 def location(file):
+    """
+    查询csv数据集中地址的坐标信息
+    """
     df = pd.read_csv(file)
 
     lat_arr = []
