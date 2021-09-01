@@ -11,11 +11,15 @@
   <div>
   主页：https://developers.google.com/maps<div>
   文档：https://developers.google.com/maps/documentation<div>
-  此次只用了Geocoding API，因此简单介绍一下这部分的使用<div>
+  此次只用了Geocoding API，因此简单介绍一下这部分的使用
+    
   ### 地理编码（Geocoding）
+  <div>
   地理编码是将地址转换为地理坐标的过程<div>
-  如：Kita-ayase Sta., 2-chōme-6 Yanaka, Adachi City, Tokyo 120-0006, Japan -> 35.7770135,139.8321012<div>
+  如：Kita-ayase Sta., 2-chōme-6 Yanaka, Adachi City, Tokyo 120-0006, Japan -> 35.7770135,139.8321012
+    
   ### Geocoding API request method
+  <div>
   可以使用https://maps.googleapis.com/maps/api/geocode/outputFormat?parameters 进行数据访问<div>
   outputFormat：输出格式，json或者xml<div>
   ```
