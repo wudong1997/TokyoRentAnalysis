@@ -81,3 +81,5 @@
   ![image](https://github.com/wudong1997/TokyoRentAnalysis/blob/main/image/Map.png)
   ##### 不同区域平均房价分布情况
   ![image](https://github.com/wudong1997/TokyoRentAnalysis/blob/main/image/Map1.png)
+  ##### 不同房型价格分布情况
+  ![image](https://github.com/wudong1997/TokyoRentAnalysis/blob/main/image/房型租金.png)
