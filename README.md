@@ -73,5 +73,20 @@
   ```
  
   ## 爬虫
-  
-  ![image](https://github.com/wudong1997/TokyoRentAnalysis/blob/main/image/屏幕截图(61).jpg)
+  如图所示为suumo的信息界面，以公寓楼为单位，进行读取
+  需要的信息包括：
+  ```
+    {'Mansion': 'ＪＲ山手線 秋葉原駅 地下1地上21階建 築16年',
+     'Address': '東京都千代田区神田練塀町',
+     'rent': '26万円',
+     'management-cost': '15000円',
+     'deposit': '26万円',
+     'gratuity': '26万円',
+     'room_type': '2LDK',
+     'area': '66.92m2',
+     'distance': 'ＪＲ山手線/秋葉原駅 歩4分',
+     'built_year': '築16年',
+     'floors': '9階'
+     }
+  ```
+  ![image](https://github.com/wudong1997/TokyoRentAnalysis/blob/main/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(61).png)
