@@ -13,3 +13,7 @@
   ![image](https://github.com/wudong1997/TokyoRentAnalysis/blob/main/image/房型租金.png)
   ##### 面积与租金的相关性
   ![image](https://github.com/wudong1997/TokyoRentAnalysis/blob/main/image/租金-面积.png)
+  ##### 建成年份与租金的相关性
+  ![image](https://github.com/wudong1997/TokyoRentAnalysis/blob/main/image/建成年份.png)
+  ##### 距车站步行距离（分钟）与租金的相关性
+  ![image](https://github.com/wudong1997/TokyoRentAnalysis/blob/main/image/距离车站的距离与房租.png)
