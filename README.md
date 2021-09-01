@@ -74,6 +74,7 @@
  
   ## 爬虫
   如图所示为suumo的信息界面，以公寓楼为单位，进行读取
+  ![image](https://github.com/wudong1997/TokyoRentAnalysis/blob/main/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(61).png)<div>
   需要的信息包括：
   ```
     {'Mansion': 'ＪＲ山手線 秋葉原駅 地下1地上21階建 築16年',
@@ -89,4 +90,3 @@
      'floors': '9階'
      }
   ```
-  ![image](https://github.com/wudong1997/TokyoRentAnalysis/blob/main/image/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE(61).png)
